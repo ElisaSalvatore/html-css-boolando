@@ -15,22 +15,20 @@ header {
     background: #f6f6f6;
 }
 
+/* cards */
 .container {
+    margin: 0 auto;
+    text-align: center;
     width: 1200px;
     height: 1200px;
     background-color: white;
-    margin: 0 auto;
-    padding: 20px 30px;
+    padding: 20px;
 }
-
-/* .cards {
-    text-align: center;
-} */
 
 .card {
     display: inline-block;
     height: 500px;
-    width: calc(1200px / 3 - 23px);
+    width: calc(1200px / 3 - 22px);
     position: relative; 
 } 
 
@@ -65,6 +63,7 @@ header {
     background-size: 90%;
 }
 
+/* hovers */
 .card img {
     display: none;
 }
@@ -74,6 +73,7 @@ header {
     display: block;
 }
 
+/* tags */
 .white {
     display: inline-block;
     height: 50px;
@@ -114,10 +114,11 @@ header {
     padding: 5px 10px;
 }
 
+/* captions */
 ul {
     position: absolute;
     left: 0;
-    bottom: -90px;
+    top: 500px;
     list-style: none;
     text-align: justify;
     font-size: 15px;
