@@ -17,21 +17,20 @@ header {
 
 .container {
     width: 1200px;
-    height: 1250px;
+    height: 1200px;
     background-color: white;
     margin: 0 auto;
     padding: 20px 30px;
 }
 
-.cards {
+/* .cards {
     text-align: center;
-}
+} */
 
 .card {
     display: inline-block;
     height: 500px;
     width: calc(1200px / 3 - 23px);
-    background: orange;
     position: relative; 
 } 
 
@@ -53,6 +52,7 @@ header {
 .card.four {
     background: url("../img/4.webp") no-repeat;
     background-size: 90%;
+    margin-top: 100px;
 }
 
 .card.five {
@@ -63,6 +63,15 @@ header {
 .card.six {
     background: url("../img/6.webp") no-repeat;
     background-size: 90%;
+}
+
+.card img {
+    display: none;
+}
+
+.card:hover img {
+    width: 90%;
+    display: block;
 }
 
 .white {
@@ -106,18 +115,24 @@ header {
 }
 
 ul {
+    position: absolute;
+    left: 0;
+    bottom: -90px;
     list-style: none;
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 40px;
 }
 
-.card img {
-    display: none;
+li.caption-1 {
+    font-weight: lighter;
 }
 
+li.caption-2 {
+    font-weight: bold;
+}
 
-.card:hover img {
-    width: 90%;
-    display: block;
+p {
+    display: inline-block;
+    color: red;
 }
